@@ -20,7 +20,6 @@ $conn->set_charset("utf8mb4");
 function sanitizeInput($data) {
     $data = trim($data);
     $data = stripslashes($data);
-    $data = htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
     return $data;
 }
 
